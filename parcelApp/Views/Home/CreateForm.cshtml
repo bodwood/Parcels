@@ -5,7 +5,7 @@
     <title>My To-Do List!</title>
     <link 
       rel="stylesheet" 
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" 
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
       crossorigin="anonymous">
   </head>
@@ -13,13 +13,13 @@
     <h1>Parcel Description: </h1>
     <form action="/parcels" method="post">
       <label for="length">Length</label>
-      <input id="length" name="length" type="text">
+      <input id="length" name="length" type="number" value="1" min="1">
       <label for="width">Width</label>
-      <input id="width" name="width" type="text">
+      <input id="width" name="width" type="number" value="1" min="1">
       <label for="height">Height</label>
-      <input id="height" name="height" type="text">
+      <input id="height" name="height" type="number" value="1" min="1">
       <label for="weight">Weight</label>
-      <input id="weight" name="weight" type="text">
+      <input id="weight" name="weight" type="number" value="1" min="1">
       <button type="submit">Submit</button>
     </form>
   </body>

@@ -21,15 +21,17 @@
     <ul>
       @foreach (Parcel i in Model)
       {
-        <li>Weight: @i.Weight</li>
+        
         <li>Height: @i.Height</li>
         <li>Width: @i.Width</li>
         <li>Length: @i.Length</li>
+        <li>Weight: @i.Weight</li>
         <li>Volume: @i.Volume</li>
+        <li>Shipping Cost: @i.Cost</li>
         <br>
       }
     </ul>
-    
+
     <a href="/parcel/new">Add Package</a>
   </body>
 </html>

@@ -21,8 +21,8 @@ namespace parcelApp.Controllers
     [HttpPost("/parcels")]
     public ActionResult Create(int height, int width, int length, int weight){
       Parcel myParcel = new Parcel(height, width, length, weight);
-      myParcel.doubleWeight();
       myParcel.VolumeTotal();
+      myParcel.costTotal();
       return RedirectToAction("Index");
     }
   }
